@@ -9,7 +9,7 @@ class Producto {
         this.cantidad = 1; 
     }
 }
-
+/*
 const iphoneXsMax = new Producto(1, "Iphone XS MAX", 750, "img/kindpng_1492280.png");
 const iphoneSe = new Producto(2, "Iphone SE 2022", 550, "img/i_Phone_SE_128_Red_min_c40aaf4019.png");
 const appleWatchUltra = new Producto(3, "Apple watch ultra", 1399, "img/ultra2.png");
@@ -18,11 +18,9 @@ const iphoneProMax = new Producto(5, "Iphone 14 PRO MAX", 1500, "img/iphone-14-p
 const macBookAirPro = new Producto(6, "MacBook Air PRO", 2000, "img/Macbook-PNG-Photo-Clip-Art-Image.png");
 const iphonePro = new Producto(7,"Iphone 13 PRO", 1100, "img/13.png");
 const airPodsPro = new Producto(8, "AirPods PRO 2", 500, "img/Airpods.png");
+*/
 
-
-
-const productos = [iphoneXsMax, iphoneSe, appleWatchUltra, appleWatchSerie, iphoneProMax, macBookAirPro, iphonePro, airPodsPro];
-
+// const productos = [iphoneXsMax, iphoneSe, appleWatchUltra, appleWatchSerie, iphoneProMax, macBookAirPro, iphonePro, airPodsPro];
 
  
 let carrito = [];
@@ -38,8 +36,12 @@ const contenedorProductos = document.getElementById("contenedorProductos");
 
 // Ver productos
 
-const mostrarProductos = () => {
-    productos.forEach((producto) => {
+const mostrarProductos = async () => {
+    const productos = await fetch ("productos.json")
+    const productosJson = await productos.json()
+    // console.log(productosJson)
+   
+    productosJson.forEach(producto=> {
         const card = document.createElement("div");
         card.classList.add("col-xl-3", "col-md-6", "col-xs-12");
         card.innerHTML = `
@@ -64,7 +66,7 @@ const mostrarProductos = () => {
 //Producto al carrito 
 
 const agregarAlCarrito = (id) => {
-    const producto = productos.find((producto) => producto.id === id);
+    const productosJson = productosJson.find((producto) => producto.id === id);
     const productoEnCarrito = carrito.find((producto) => producto.id === id);
     if(productoEnCarrito){
         productoEnCarrito.cantidad++;
