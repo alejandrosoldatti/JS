@@ -3,48 +3,56 @@
        "id":1,
        "nombre":"Iphone XS MAX",
        "precio":750,
-       "img":"img/kindpng_1492280.png"
+       "img":"img/kindpng_1492280.png",
+       "cantidad":1
     },
     {
        "id":2,
        "nombre":"Iphone SE 2022",
        "precio":550,
-       "img":"img/i_Phone_SE_128_Red_min_c40aaf4019.png"
+       "img":"img/i_Phone_SE_128_Red_min_c40aaf4019.png",
+       "cantidad":1
     },
     {
        "id":3,
        "nombre":"Apple watch ultra",
        "precio":1399,
-       "img":"img/ultra2.png"
+       "img":"img/ultra2.png",
+       "cantidad":1
     },
     {
        "id":4,
        "nombre":"Apple watch serie 3",
        "precio":400,
-       "img":"img/White-Apple-Watch-Transparent-Image.png"
+       "img":"img/White-Apple-Watch-Transparent-Image.png",
+       "cantidad":1
     },
     {
        "id":5,
        "nombre":"Iphone 14 PRO MAX",
        "precio":1500,
-       "img":"img/iphone-14-pro.png"
+       "img":"img/iphone-14-pro.png",
+       "cantidad":1
     },
     {
        "id":6,
        "nombre":"MacBook Air PRO",
        "precio":2000,
-       "img":"img/Macbook-PNG-Photo-Clip-Art-Image.png"
+       "img":"img/Macbook-PNG-Photo-Clip-Art-Image.png",
+       "cantidad":1
     },
     {
        "id":7,
        "nombre":"Iphone 13 PRO",
        "precio":1100,
-       "img":"img/13.png"
+       "img":"img/13.png",
+       "cantidad":1
     },
     {
        "id":8,
        "nombre":"AirPods PRO 2",
        "precio":500,
-       "img":"img/Airpods.png"
+       "img":"img/Airpods.png",
+       "cantidad":1
     }
  ]
